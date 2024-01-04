@@ -15,18 +15,24 @@
              </div>
              <div class="signUpForm">
                  <h3>Come join us!</h3>
-                 <div class="inputBox">
-                    <input type="text" placeholder="First Name" required/>
-                 </div>
-                 <div class="inputBox">
-                    <input type="text" placeholder="Last Name" required/>
-                 </div>
-                 <div class="inputBox">
-                    <input type="email" placeholder="Email" required/>
-                 </div>
-                 <div class="inputBox">
-                    <input type="password" placeholder="Password" required/>
-                 </div>
+                 <form action="#" method="get">
+                    <div class="inputBox">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                    </div> 
+                    <div class="inputBox">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" id="password" minlength="8" maxlength="12" pattern="((?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$)" placeholder="Password" required>
+                    </div>
+                    <p class="pwReq">
+                        Min. 1 Uppercase, 1 Lowercase,<br> 1 Number/Special Character
+                    </p>
+                    <button type="submit" id="submitBtn" >Sign Up</button>
+                 </form>
              </div>
         </div>
     </div>
